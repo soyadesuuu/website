@@ -1,0 +1,32 @@
+body {
+    font-family: Courier, monospace;
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+a, a:visited, a:hover {
+    color:plum;
+}
+
+.spaced {
+    letter-spacing: 0.4ch;
+}
+
+.container {   
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+:root,
+
+body {
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+/*maybe a cute lil mouse cursor? uwu */
+/*remember to tell april she's the best (very important)*/
