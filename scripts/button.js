@@ -8,7 +8,7 @@ window.onload = () => {
 
     button.addEventListener('click', () => {
         if (socket.readyState == socket.OPEN) {
-            socket.send({type:0});
+            socket.send(JSON.stringify({type:0}));
             button.disabled = true;
             setTimeout(() => { button.disabled = false; }, 1000);
         } else button.disabled = true;
