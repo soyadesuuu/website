@@ -30,4 +30,11 @@ window.onload = () => {
             button.textContent = 'Disconnected. Please refresh to continue spitting on that thang';
         }
     });
+
+    // Heartbeat
+    setInterval(() => {
+        if (socket.readyState == socket.OPEN) {
+            socket.send(JSON.stringify({type:-23}));
+        }
+    }, 30000);
 }
